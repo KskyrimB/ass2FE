@@ -55,12 +55,12 @@ function getDataById(id) {
 
 function postData() {
 	
-    var flatNo = document.getElementById("rollNumber").value;
+    var rollNumber = document.getElementById("rollNumber").value;
 	var firstName = document.getElementById("firstName").value;
 	var lastName = document.getElementById("lastName").value;
-	var lastName = document.getElementById("year").value;
-	var lastName = document.getElementById("dept").value;
-	var lastName = document.getElementById("div").value;
+	var year = document.getElementById("year").value;
+	var dept = document.getElementById("dept").value;
+	var div = document.getElementById("div").value;
 	var phoneNumber = document.getElementById("phoneNumber").value;
 	var emailID = document.getElementById("emailID").value;
 
@@ -85,12 +85,12 @@ function postData() {
 
 
 function putData() {
-	var flatNo = document.getElementById("rollNumber").value;
+	var rollNumber = document.getElementById("rollNumber").value;
 	var firstName = document.getElementById("firstName").value;
 	var lastName = document.getElementById("lastName").value;
-	var lastName = document.getElementById("year").value;
-	var lastName = document.getElementById("dept").value;
-	var lastName = document.getElementById("div").value;
+	var year = document.getElementById("year").value;
+	var dept = document.getElementById("dept").value;
+	var div = document.getElementById("div").value;
 	var phoneNumber = document.getElementById("phoneNumber").value;
 	var emailID = document.getElementById("emailID").value;
 
