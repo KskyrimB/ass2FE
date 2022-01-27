@@ -13,14 +13,15 @@ crossorigin="anonymous"></script>
         <div class="container-fluid">
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
+              <a id="test3" class="nav-link " href="index.html">Home</a>
               <a id="test1" class="nav-link " aria-current="page" href="table.html">View Records </a>
               <a id="test2" class="nav-link active"  href="add.html">Add New</a>
-              <a id="test3" class="nav-link " href="index.html">Home</a>
             </div>
           </div>
         </div>
       </nav>
  </header>
+ <br><br>
  <h3>Edit your details</h3>
  <form onsubmit="return false;">
  
@@ -29,30 +30,38 @@ crossorigin="anonymous"></script>
   <input type="text" class="form-control" id="firstName" autofocus>
   </div>
   <div class="mb-3">
-  <label for="lastName" class="form-label">Last Name</label>
-  <input type="text" class="form-control" id="lastName" autofocus>
+    <label for="lastName" class="form-label">Last Name</label>
+    <input type="text" class="form-control" id="lastName" autofocus>
   </div>
   <div class="mb-3">
-  <label for="phoneNumber" class="form-label">Phone number</label>
-  <input type="number" class="form-control" id="phoneNumber">
+    <label for="rollNumber" class="form-label">Roll Number</label>
+    <input type="text" class="form-control" id="rollNumber">
   </div>
   <div class="mb-3">
-  <label for="emailID" class="form-label">Email-ID</label>
-  <input type="email" class="form-control" id="emailID">
+    <label for="year" class="form-label">Year</label>
+    <input type="text" class="form-control" id="year" autofocus>
   </div>
   <div class="mb-3">
-  <label for="flatNo" class="form-label">Flat Number</label>
-  <input type="text" class="form-control" id="flatNo">
+    <label for="dept" class="form-label">Dept.</label>
+    <input type="text" class="form-control" id="dept" autofocus>
   </div>
+  <div class="mb-3">
+    <label for="div" class="form-label">Div</label>
+    <input type="text" class="form-control" id="div" autofocus>
+  </div>
+  <div class="mb-3">
+    <label for="phoneNumber" class="form-label">Phone number</label>
+    <input type="number" class="form-control" id="phoneNumber">
+  </div>
+  <div class="mb-3">
+    <label for="emailID" class="form-label">Email-ID</label>
+    <input type="email" class="form-control" id="emailID">
+  </div>
+  
 
  <button class="btn btn-success" onclick="return putData()">Update</button>
  <a href="index.html" class="btn btn-danger">Cancel</a>
  </form>
- <footer class="footer mt-auto py-3 bg-light">
- <div class="container text-center">
- <span class="text-muted">right &copy; 2021</span>
- </div>
- </footer>
 </body>
 <script src="script.js"></script>
 <script>

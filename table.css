@@ -3,12 +3,12 @@
 }
 
 #test1,#test2,#test3{
-    color:white;
+    color:azure;
 }
 
 #test1:hover,#test2:hover,#test3:hover
 {
-    color:aqua;
+    color:azure;
 }
 
 body{
@@ -16,5 +16,5 @@ body{
 }
 
 .active{
-    color:aqua;
+    color:azure;
 }
