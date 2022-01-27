@@ -1,4 +1,4 @@
-const api_url = "https://ass2server.herokuapp.com/student"
+const api_url = "https://ass2server.herokuapp.com/students"
 
 function loadData(records = []) {
 	var table_data = "";
