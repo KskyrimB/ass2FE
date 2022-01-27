@@ -5,9 +5,12 @@ function loadData(records = []) {
 	for(let i=0; i<records.length; i++)
 	 {
 		table_data += `<tr>`;
-		table_data += `<td>${records[i].flatNo}</td>`;
+		table_data += `<td>${records[i].rollNumber}</td>`;
 		table_data += `<td>${records[i].firstName}</td>`;
 		table_data += `<td>${records[i].lastName}</td>`;
+		table_data += `<td>${records[i].year}</td>`;
+		table_data += `<td>${records[i].dept}</td>`;
+		table_data += `<td>${records[i].div}</td>`;
 		table_data += `<td>${records[i].phoneNumber}</td>`;
 		table_data += `<td>${records[i].emailID}</td>`;
 		table_data += `<td>`;
@@ -35,9 +38,12 @@ function getDataById(id) {
 	
 		console.log(data);
 	
-		document.getElementById("flatNo").value = data.flatNo;
+		document.getElementById("rollNumber").value = data.rollNumber;
 		document.getElementById("firstName").value = data.firstName;
 		document.getElementById("lastName").value = data.lastName;
+		document.getElementById("year").value = data.year;
+		document.getElementById("dept").value = data.dept;
+		document.getElementById("div").value = data.div;
 		document.getElementById("phoneNumber").value = data.phoneNumber;
 		document.getElementById("emailID").value = data.emailID;
 		
@@ -49,15 +55,18 @@ function getDataById(id) {
 
 function postData() {
 	
-    var flatNo = document.getElementById("flatNo").value;
+    var flatNo = document.getElementById("rollNumber").value;
 	var firstName = document.getElementById("firstName").value;
 	var lastName = document.getElementById("lastName").value;
+	var lastName = document.getElementById("year").value;
+	var lastName = document.getElementById("dept").value;
+	var lastName = document.getElementById("div").value;
 	var phoneNumber = document.getElementById("phoneNumber").value;
 	var emailID = document.getElementById("emailID").value;
 
 	
 	
-	data = {flatNo: flatNo, firstName: firstName, lastName: lastName, phoneNumber: phoneNumber, emailID: emailID};
+	data = {rollNumber: rollNumber, firstName: firstName, lastName: lastName, year: year, dept: dept, div: div, phoneNumber: phoneNumber, emailID: emailID};
 	
 	fetch(api_url, {
 		method: "POST",
@@ -76,16 +85,19 @@ function postData() {
 
 
 function putData() {
-	var flatNo = document.getElementById("flatNo").value;
+	var flatNo = document.getElementById("rollNumber").value;
 	var firstName = document.getElementById("firstName").value;
 	var lastName = document.getElementById("lastName").value;
+	var lastName = document.getElementById("year").value;
+	var lastName = document.getElementById("dept").value;
+	var lastName = document.getElementById("div").value;
 	var phoneNumber = document.getElementById("phoneNumber").value;
 	var emailID = document.getElementById("emailID").value;
 
 	
 	
 	
-	data = {flatNo: flatNo, firstName: firstName, lastName: lastName, phoneNumber: phoneNumber, emailID: emailID};
+	data = {rollNumber: rollNumber, firstName: firstName, lastName: lastName, year: year, dept: dept, div: div, phoneNumber: phoneNumber, emailID: emailID};
 	
 	
 	
